@@ -17,9 +17,13 @@ To get started with `gpt-repository-loader`, follow these steps:
    ```bash
    python gpt_repository_loader.py /path/to/git/repository [-p /path/to/preamble.txt] [-o /path/to/output_file.txt]
    ```
-    Replace `/path/to/git/repository` with the path to the Git repository you want to process. Optionally, you can specify a preamble file with -p or an output file with -o. If not specified, the default output file will be named output.txt in the current directory.
+   Replace `/path/to/git/repository` with the path to the Git repository you want to process.
 
-5. The tool will generate an output.txt file containing the text representation of the repository. You can now use this file as input for AI language models or other text-based processing tasks.
+   Optionally, you can
+      - Specify a preamble file with -p or an output file with -o. If not specified, the default output file will be named output.txt in the current directory.
+      - Ignore file/types by copying `.gptignore` into `/path/to/git/repository` (same syntax as [.gitignore](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files))
+
+6. The tool will generate an output.txt file containing the text representation of the repository. You can now use this file as input for AI language models or other text-based processing tasks.
 
 ## Running Tests
 
