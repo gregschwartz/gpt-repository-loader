@@ -12,7 +12,27 @@ LICENSE
 *.tar.gz
 .gitignore
 *.env*
+*bin/*
+*.lock
+.prettierignore
+
+# Node.js
+node_modules/*
+submodules/*
+package-lock.json
+
+# Mac
+.DS_Store
+
+# Images
 *.png
 *.jpeg
 *.jpg
-*bin/*
+*.gif
+
+# Documents
+*.doc
+*.pdf
+*.xls
+*.csv
+*.tsv
